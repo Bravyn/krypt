@@ -1,2 +1,2 @@
-# krypt
-## A collection of node.js tools.
+# This is an educational website  built with vanilla js, html and css
+
