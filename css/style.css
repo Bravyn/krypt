@@ -19,7 +19,7 @@
     --color-black: #000;
     --color-bg: #1f2641;
     --color-bg1: #2e3267;
-    --colot-bg2: #424890;
+    --color-bg2: #424890;
 
     --container-width-lg: 76%;
     --container-width-md: 90%;
@@ -40,7 +40,7 @@
 }
 /** 1 rem = 16px**/
 section {
-    padding: 6rem 0;
+    padding: 3rem 0;
 }
 
 section h2 {
@@ -62,6 +62,9 @@ h3{
 }
 h4{
     font-size: 1.3rem;
+}
+h5{
+    font-weight: 700;
 }
 
 a {
@@ -132,4 +135,60 @@ nav button {
 
 .nav__menu a:hover{
     color: var(--color-light);
+}
+header{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+.header__left p {
+    margin: 1rem 0 2.4rem;
+}
+
+.header__left h1 span{
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.header__left h1{
+    font-weight: 300;
+    margin: .4rem 0 1.2rem;
+}
+
+/* categories section */
+.categories{
+    background: var(--color-bg1);
+}
+.categories h1{
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+.categories__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+}
+.categories__left p {
+    margin: 1rem 0 3rem;
+}
+.categories__right {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.2rem,
+}
+.category {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
 }
