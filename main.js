@@ -10,8 +10,10 @@ function isElementInViewport(element) {
   }
   
   // Function to handle scroll event
-  function handleScroll() {
-    var elements = document.getElementsByClassName('element');
+  const handleScroll = () => {
+    const nav = document.getElementsByTagName('nav')[0];
+    nav.style.backgroundColor = "white";
+    var elements = document.getElementsByClassName('categories');
     
     for (var i = 0; i < elements.length; i++) {
       var element = elements[i];
@@ -24,7 +26,7 @@ function isElementInViewport(element) {
   
   // Add scroll event listener
   window.addEventListener('scroll',  handleScroll);
-  
+ 
   // Trigger the animation for elements already in view
-  handleScroll();
+
   
