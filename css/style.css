@@ -106,6 +106,9 @@ nav {
    top: 0;
    z-index: 11;
 }
+.on__scroll{
+    background-color: var(--color-primary);
+}
 
 .nav__container{
     width: 100%;
