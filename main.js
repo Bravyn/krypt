@@ -11,22 +11,23 @@ function isElementInViewport(element) {
   
   // Function to handle scroll event
   const handleScroll = () => {
-    const nav = document.getElementsByTagName('nav')[0];
-    nav.style.backgroundColor = "white";
     var elements = document.getElementsByClassName('categories');
     
     for (var i = 0; i < elements.length; i++) {
       var element = elements[i];
       
       if (isElementInViewport(element)) {
-        element.classList.add('animate');
+        element.classList.add('categories');
       }
     }
   }
   
   // Add scroll event listener
-  window.addEventListener('scroll',  handleScroll);
- 
+window.addEventListener('scroll',  handleScroll);
+addEventListener('scroll', () => {
+    const nav = document.getElementsByTagName('nav')[0];
+    nav.style.backgroundColor = "var(--color-bg1)";
+}) 
   // Trigger the animation for elements already in view
-
+handleScroll()
   
